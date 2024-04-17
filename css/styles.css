@@ -20,23 +20,28 @@ main {
     left: -25%;
     position: absolute;
     transform-origin: 34% -3%;
+    transition: 500ms;
 
 }
 
 
 main.rotate {
     transform: rotate(-20deg) translate(0, -100px);
-    animation: rotate 1s linear;
+    animation: rotate 500ms linear;
+    transition-delay: .3s;
+    transition: 500ms;
+
 
 }
 
 main.unrotate {
     /* transform: translate(0, 100px); */
     animation: rotate 1s reverse;
+    transition-delay: .3s;
 
 }
 
-header {
+aside {
     grid-column: 1;
     background-color: #333;
     position: absolute;
@@ -61,6 +66,8 @@ header {
         width: 130px;
         transform: rotate(20deg) translate(-150px);
         color: white;
+        transition: 500ms;
+
 
         ion-icon {
             font-size: 22px;
@@ -69,7 +76,10 @@ header {
     }
 
     span.translate {
+        transform: rotate(20deg) translate(-0px);
+        
         animation: span-translate 1s linear;
+        transition: 1s;
     }
 
     span.untranslate {
@@ -89,17 +99,23 @@ nav {
     align-items: center;
     justify-items: center;
     z-index: 10;
+    transition: 500ms;
+
 }
 
 nav.rotate {
     transform: translate(-50%, -50%) rotate(-90deg);
     animation: rotate-nav 500ms linear;
+    transition-delay: .3s;
+    transition: 500ms;
 
 }
 
 nav.unrotate {
     transform: translate(-50%, -50%) rotate(-0deg);
     animation: rotate-nav 500ms reverse;
+    transition-delay: .3s;
+    transition: 500ms;
 
 }
 
